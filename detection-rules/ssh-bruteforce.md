@@ -1,0 +1,44 @@
+<group name="authentication,sshd,syslog">
+ <rule id="100100" level="3">
+   <if_sid>5710</if_sid>
+   <description>Invalid SSH user authentication attempts</description>
+ </rule>
+
+ <rule id="100101" level="7" frequency="6" timeframe="120" ignore="300">
+   <if_matched_sid>100100</if_matched_sid>
+   <same_srcip />
+   <description>Multiple SSH authentication failures (possible brute force attack)</description>
+   <mitre>
+     <id>T1110</id>
+   </mitre>
+ </rule>
+
+ <rule id="100102" level="12" timeframe="300">
+   <if_matched_sid>100101</if_matched_sid>
+   <if_sid>5715</if_sid>
+   <same_srcip />
+   <description>Successful SSH authentication after a possible brute force attack from same IP</description>
+  </rule>
+</group>
+
+<group name="linux,command_execution">
+ <rule id="100201" level="12" timeframe="300">
+   <if_matched_sid>100101</if_matched_sid>
+   <if_sid>5403</if_sid>
+  <same_location />
+   <description>Potential privilege escalation after possible brute force attack</description>
+   <mitre>
+     <id>T1548.003</id>
+   </mitre>
+ </rule>
+ 
+  <rule id="100202" level="12" timeframe="300">
+   <if_matched_sid>100101</if_matched_sid>
+   <if_sid>5402</if_sid>
+  <same_location />
+   <description>Potential privilege escalation after possible brute force attack</description>
+   <mitre>
+     <id>T1548.003</id>
+   </mitre>
+ </rule>
+</group>
