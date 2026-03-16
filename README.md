@@ -6,4 +6,6 @@ This project aims to demonstrate the design and implementation of a Security Inf
 
 The objective of this lab is to learn how to design and implement security monitoring architecture to collect logs and analyze events to create detection rules to identify suspicious activities.
 
-This will repository serves as documentation on the architecture, the detection engineering process and atatcking scenarios that was 
+This repository serves as documentation for the architecture, the detection engineering process and attacking scenarios implemented to test monitoring and alerting of the SIEM.
+
+Through this project, I simulated and analyzed various security events to demonstrate how a SIEM can detect, correlate, and respond to suspicious activities.
