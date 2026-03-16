@@ -23,8 +23,8 @@
 
 <group name="linux,command_execution">
  <rule id="100201" level="12" timeframe="300">
-   <if_matched_sid>100101</if_matched_sid>
-   <if_sid>5403</if_sid>
+   <if_matched_sid>100101</if_matched_sid> 
+   <if_sid>5403</if_sid> // Successful sudo execution
   <same_location />
    <description>Potential privilege escalation after possible brute force attack</description>
    <mitre>
@@ -34,7 +34,7 @@
  
   <rule id="100202" level="12" timeframe="300">
    <if_matched_sid>100101</if_matched_sid>
-   <if_sid>5402</if_sid>
+   <if_sid>5402</if_sid> // Failed sudo execution
   <same_location />
    <description>Potential privilege escalation after possible brute force attack</description>
    <mitre>
