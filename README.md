@@ -10,4 +10,4 @@ This repository serves as documentation for the architecture, the detection engi
 
 Through this project, I simulated and analyzed various security events to demonstrate how a SIEM can detect, correlate, and respond to suspicious activities.
 
-Disclaimer: I am actively working on this documentation. It does not accurately reflect the missing work I have yet to add to this repository.
+Disclaimer: I am actively working on this documentation. It does not reflect all completed or ongoing work. 
