@@ -9,3 +9,5 @@ The objective of this lab is to learn how to design and implement security monit
 This repository serves as documentation for the architecture, the detection engineering process and attacking scenarios implemented to test monitoring and alerting of the SIEM.
 
 Through this project, I simulated and analyzed various security events to demonstrate how a SIEM can detect, correlate, and respond to suspicious activities.
+
+Disclaimer: I am actively working on this documentation. It does not accurately reflect the missing work I have yet to add to this repository.
