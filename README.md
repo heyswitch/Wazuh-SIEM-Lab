@@ -11,3 +11,7 @@ This repository serves as documentation for the architecture, the detection engi
 Through this project, I simulated and analyzed various security events to demonstrate how a SIEM can detect, correlate, and respond to suspicious activities.
 
 Disclaimer: I am actively working on this documentation. It does not reflect all completed or ongoing work. 
+
+## Detection Engineering
+
+detection-rules/ssh-bruteforce.md for full rule design about the rules I developed to detect SSH brute force attacks and correlations for potential compromise and command execution events.
