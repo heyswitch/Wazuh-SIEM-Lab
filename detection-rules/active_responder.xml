@@ -1,0 +1,8 @@
+Temporarily blocks source IP for 3 minutes when Multiple SSH authentication failures rule is matched
+ <active-response>
+    <disabled>no</disabled>
+    <command>firewall-drop</command>
+    <location>local</location>
+    <rules_id>100101</rules_id> 
+    <timeout>180</timeout>
+  </active-response>
