@@ -12,6 +12,14 @@ Through this project, I simulated and analyzed various security events to demons
 
 Disclaimer: I am actively working on this documentation. It does not reflect all completed or ongoing work. 
 
+## Severity Alert Levels
+
+0-2 (Informational)
+3-5 (Low severity)
+6-8 (Medium Severity)
+9-11(High Severity - Likely Attack)
+12 - 15 (Critical - Confirmed Attack)
+
 ## Detection Engineering
 
 detection-rules/ssh-bruteforce.md for full rule design about the rules I developed to detect SSH brute force attacks and correlations for potential compromise and command execution events.
