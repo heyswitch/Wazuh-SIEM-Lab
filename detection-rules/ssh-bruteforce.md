@@ -17,16 +17,16 @@ A brute force attempt is when an adversary repeatedly tries to guess valid crede
 Rule 1 - Base Detection:
 
 Base event to detect individual failed SSH login attempts using default Wazuh SID. It serves as a base rule for subsequent brute force detection logic. Each authentication failure is logged to enable correlation rules to track over time.
-
+```xml
  <rule id="100100" level="3">
    <if_sid>5710</if_sid>
    <description>Invalid SSH user authentication attempts</description>
  </rule>
-
+```
 Rule 2 - Multiple SSH Failure Dection:
 
 
-
+```xml
   <rule id="100101" level="7" frequency="6" timeframe="120" ignore="300">
    <if_matched_sid>100100</if_matched_sid>
    <same_srcip />
@@ -35,3 +35,4 @@ Rule 2 - Multiple SSH Failure Dection:
      <id>T1110</id>
    </mitre>
  </rule>
+```
